@@ -41,8 +41,8 @@ try {
 
         // แฮชรหัสผ่าน และเพิ่มข้อมูลลง DB
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO users (username, phone_number, email, password) 
-                VALUES (:username, :phone_number, :email, :password)";
+        $sql = "INSERT INTO users (username, email, password, oauth_provider, oauth_id, created_at)
+                VALUES (:username, :email, :password, NULL, NULL, NOW())";
         $stmt = $pdo->prepare($sql);
         if (
             $stmt->execute([
