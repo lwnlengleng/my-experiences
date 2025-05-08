@@ -61,9 +61,9 @@ if (isset($_SESSION['user_login'])) {
                 <p> or login with socials platform</p>
                 <div class="social-icons">
                     <a href="config/set_provider.php?provider=Google"><i class='bx bxl-google-plus'></i></a>
-                    <a href="config/callback.php?provider=Facebook"><i class='bx bxl-facebook-circle'></i></a>
-                    <a href="config/callback.php?provider=GitHub"><i class='bx bxl-github'></i></a>
-                    <a href="config/callback.php?provider=LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="config/set_provider.php?provider=Facebook"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="config/set_provider.php?provider=GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="config/set_provider.php?provider=LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
                 </div>
             </form>
         </div>
